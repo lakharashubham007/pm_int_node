@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
 
 const facilitySchema = new mongoose.Schema({
-    title: { type: String, required: true },
+    name: { type: String, required: true },
     description: { type: String, required: true },
-    images: { type: [String], default: [] }
+    icon: { type: String, required: true },
+    image: { type: String, required: true },
+    color: { type: String, required: true },
+    isActive: { type: Boolean, default: true }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Facility', facilitySchema);

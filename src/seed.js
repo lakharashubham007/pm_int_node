@@ -77,39 +77,38 @@ const seedDB = async () => {
             { title: 'Website Content', classChange: 'menu-title', module_id: 'web_mgmt', parent_module_id: '-1', hasMenu: false },
             {
                 title: 'Hero Section',
-                iconStyle: 'LayoutTemplate',
+                iconStyle: 'LayoutGrid',
+                to: 'cms/hero',
                 parent_module_id: 'web_mgmt',
-                hasMenu: true,
-                content: [
-                    { title: 'Manage Hero', to: 'cms/hero' }
-                ]
+                hasMenu: false
             },
             {
                 title: 'Gallery',
                 iconStyle: 'Image',
+                to: 'cms/gallery',
                 parent_module_id: 'web_mgmt',
-                hasMenu: true,
-                content: [
-                    { title: 'Media Manager', to: 'gallery/manage' }
-                ]
+                hasMenu: false
             },
             {
                 title: 'Facilities',
-                iconStyle: 'Building',
+                iconStyle: 'Sparkles',
+                to: 'cms/facilities',
                 parent_module_id: 'web_mgmt',
-                hasMenu: true,
-                content: [
-                    { title: 'Update Facilities', to: 'facilities/update' }
-                ]
+                hasMenu: false
             },
             {
                 title: 'About Us',
                 iconStyle: 'Info',
+                to: 'cms/about',
                 parent_module_id: 'web_mgmt',
-                hasMenu: true,
-                content: [
-                    { title: 'Manage About', to: 'cms/about' }
-                ]
+                hasMenu: false
+            },
+            {
+                title: 'Contact Us',
+                iconStyle: 'Phone',
+                to: 'cms/contact',
+                parent_module_id: 'web_mgmt',
+                hasMenu: false
             }
         ];
 
